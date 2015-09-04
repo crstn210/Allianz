@@ -1,0 +1,13 @@
+{
+  "name": "servibarras",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "fullpage.js": "~2.6.8",
+    "snap.svg": "~0.4.1",
+    "normalize.css": "~3.0.3",
+    "font-awesome": "~4.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "AllianzApp"
+}

@@ -1,0 +1,535 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/fullpage.js/jquery.fullPage.css" />
+    <link rel="stylesheet" href="/bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="servibarrasApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+
+<nav id="menu" class="menu">
+  <button class="menu__handle"><span>Menu</span></button>
+  <div class="menu__inner">
+    <ul>
+      <li><a href="#inicio" class="tooltip" data-tip="Inicio" ><i class="fa fa-home"></i><span><span></a></li>
+      <li><a href="#video" class="tooltip" data-tip="Video" ><i class="fa fa-play-circle-o"></i><span><span></a></li>
+      <li><a href="#servicio" class="tooltip" data-tip="Soluciones VIP" ><i class="fa fa-print"></i><span><span></a></li>
+      <li><a href="#servicio2" class="tooltip" data-tip="Soluciones Prime" ><i class="fa fa-map"></i><span><span></a></li>
+      <li><a href="#servicio3" class="tooltip" data-tip="Marketing y Promocionales" ><i class="fa fa-line-chart"></i><span><span></a></li>
+      <li><a href="#servicio4" class="tooltip" data-tip="Gestión de Información" ><i class="fa fa-file"></i><span><span></a></li>
+      <li><a href="#servicio5" class="tooltip" data-tip="Seguridad" ><i class="fa fa-lock"></i><span><span></a></li>
+      <li><a href="#clientes" class="tooltip" data-tip="Clientes" ><i class="fa fa-users"></i><span><span></a></li>
+      <li><a href="#contacto" class="tooltip" data-tip="Contacto" ><i class="fa fa-envelope"></i><span><span></a></li>
+    </ul>
+  </div>
+  <div class="morph-shape" data-morph-open="M300-10c0,0,295,164,295,410c0,232-295,410-295,410" data-morph-close="M300-10C300-10,5,154,5,400c0,232,295,410,295,410">
+    <svg width="100%" height="100%" viewBox="0 0 600 800" preserveAspectRatio="none">
+      <path fill="none" d="M300-10c0,0,0,164,0,410c0,232,0,410,0,410"/>
+    </svg>
+  </div>
+</nav>
+
+  <span class="pajaroContainer">
+    <img src="images/logo.png" alt="">
+  </span>
+
+
+ <!--  <div class="lenguajes">
+    <span><a href="">ES</a></span>
+    <span>/</span>
+    <span><a href="">EN</a></span>
+  </div> -->
+    
+<div id="fullpage" ng-controller="MainCtrl">
+    <div class="section">
+       <video preload="auto" loop="loop" id="pretzel-video" class="video-playing" autoplay=""  style="width:100%;">
+          <source data-src="videos/Allianz.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="section ">
+      <div class="contenido">
+        <h1>“Reaction of financial markets strongly exaggerated“</h1>
+        <img src="images/Heise_stage_960x400.jpg" alt="">
+        <p>Michael Heise, Head of Group Economic Research at Allianz SE, answers questions on the latest developments on the international financial markets.</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="slide" data-anchor="slide1">
+        <div class="contenido">
+          <h1>Allianz Golf Camp in St Andrews Links</h1>
+          <img src="images/golfcamp_2015_960x400.jpg" alt="">
+          <p>Allianz welcomed 18 young golfers from eleven countries to St Andrews Links, Scotland, for the third annual Allianz Golf Camp from August 22-25, 2015. The group had the exceptional opportunity to play on the world’s oldest golf course.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-color:#2aacb5;" data-anchor="slide2"> 
+      <div class="contenido" id="transporte">
+          <h1>Disminución</h1>
+          <div class="exito">
+            <article>
+              <h1></h1>
+              <img data-src="images/transporte.gif" alt="">
+            </article>
+          </div>
+           <h1>en costos</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-color:#55bdc4;" data-anchor="slide3">
+        <dev class="contenido">
+           <h1>Metodología</h1>
+           <div class="metodologia">
+              <img data-src="images/metodologia.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+           </div>
+         </dev> 
+      </div>
+      <div class="slide" style="background-color:#80ced3; contact" data-anchor="slide4">
+        <div class="contenido procesos">
+          <h1>Procesos</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+          <p>Nam ullamcorper, urna non luctus semper, massa sapien mollis ex, mollis hendrerit libero ex ut leo. In aliquam dolor mi, in porttitor lectus gravida vitae. Mauris mattis, ex nec vulputate vehicula, quam justo dignissim orci, luctus aliquam augue neque quis augue. Ut laoreet pretium purus, quis varius nulla egestas vel. Pellentesque blandit mauris volutpat ante elementum dignissim. In dolor est, eleifend ac eros in, volutpat consequat massa. Pellentesque mollis nisi a fringilla placerat. Etiam odio metus, commodo nec placerat non, maximus a erat. Donec at sollicitudin sapien. Curabitur quam enim, tincidunt in est sed, aliquam consequat ligula. Phasellus iaculis leo ut nisi mollis suscipit. Suspendisse potenti. Integer ultricies metus id mi accumsan, ac pharetra mauris varius.</p>
+        </div>
+      </div>
+      <div class="slide contact" data-anchor="slide5">
+        <form>
+  <h1>Contáctenos</h1>
+  <input placeholder="Nombre" type="text"  value="" required>
+  <input placeholder="Email" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+  <span class="validation-text">Please enter a valid email address.</span>
+  <div class="flex">
+    <textarea placeholder="Mensaje" rows="1" required></textarea>
+  </div>
+  <button>Enviar</button>
+</form>
+      </div>
+    </div>
+     
+    <div class="section">
+      <div class="slide" data-anchor="slide1">
+       <div class="contenido">
+          <h1>Allianz Junior Football Camp with Manuel Neuer</h1>
+          <img src="images/jfc_2015_960x400_01.jpg" alt="">
+          <p>75 youth from 27 countries train like the pros at the strongest football youth development program of FC Bayern Munich.</p>
+        </div>
+      </div>
+       <div class="slide"  style="background-color:#b42a56;" data-anchor="slide2"> 
+         <div class="contenido" id="ventas">
+          <h1>Incremento</h1>
+          <div class="exito">
+            <article>
+              <h1></h1>
+              <img data-src="images/marketing.gif" alt="">
+            </article>
+          </div>
+           <h1>en ventas</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+        </div>
+      </div>
+      <div class="slide"  style="background-color:#c35578;" data-anchor="slide3">
+        <dev class="contenido">
+           <h1>Metodología</h1>
+           <div class="metodologia">
+              <img src="images/metodologia.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+           </div>
+         </dev> 
+      </div>
+      <div class="slide"  style="background-color:#d2809a; " data-anchor="slide4">
+        <div class="contenido procesos">
+          <h1>Procesos</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+          <p>Nam ullamcorper, urna non luctus semper, massa sapien mollis ex, mollis hendrerit libero ex ut leo. In aliquam dolor mi, in porttitor lectus gravida vitae. Mauris mattis, ex nec vulputate vehicula, quam justo dignissim orci, luctus aliquam augue neque quis augue. Ut laoreet pretium purus, quis varius nulla egestas vel. Pellentesque blandit mauris volutpat ante elementum dignissim. In dolor est, eleifend ac eros in, volutpat consequat massa. Pellentesque mollis nisi a fringilla placerat. Etiam odio metus, commodo nec placerat non, maximus a erat. Donec at sollicitudin sapien. Curabitur quam enim, tincidunt in est sed, aliquam consequat ligula. Phasellus iaculis leo ut nisi mollis suscipit. Suspendisse potenti. Integer ultricies metus id mi accumsan, ac pharetra mauris varius.</p>
+        </div>
+      </div>
+      <div class="slide contact" data-anchor="slide5">
+        <form>
+  <h1>Contáctenos</h1>
+  <input placeholder="Nombre" type="text"  value="" required>
+  <input placeholder="Email" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+  <span class="validation-text">Please enter a valid email address.</span>
+  <div class="flex">
+    <textarea placeholder="Mensaje" rows="1" required></textarea>
+  </div>
+  <button>Enviar</button>
+</form>
+      </div>
+    </div>
+    <div class="section">
+      <div class="slide" data-anchor="slide1">
+       
+         <div class="contenido">
+          <h1>An integral part of the DLD landscape</h1>
+          <img src="images/dldsummer_02_960x400_02.jpg" alt="">
+          <p>Premiere in Munich: the first DLDsummer Conference took place in the Allianz Auditorium. The partnership with Digital Life Design (DLD) was established by Claudine Perlet and Jörg Richtsfeld ‎from Allianz. The initiators explain what the partnership is all about.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-color:#7eb634;" data-anchor="slide2"> 
+        <div class="contenido">
+          <h1>Casos de éxito</h1>
+          <div class="exito">
+            <article>
+              <h1></h1>
+              <img src="images/chart.png" alt="">
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="slide" style="background-color:#98c45c;" data-anchor="slide3">
+        <dev class="contenido">
+           <h1>Metodología</h1>
+           <div class="metodologia">
+              <img src="images/metodologia.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+           </div>
+         </dev> 
+      </div>
+      <div class="slide" style="background-color:#b2d385; contact" data-anchor="slide4">
+        <div class="contenido procesos">
+          <h1>Procesos</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+          <p>Nam ullamcorper, urna non luctus semper, massa sapien mollis ex, mollis hendrerit libero ex ut leo. In aliquam dolor mi, in porttitor lectus gravida vitae. Mauris mattis, ex nec vulputate vehicula, quam justo dignissim orci, luctus aliquam augue neque quis augue. Ut laoreet pretium purus, quis varius nulla egestas vel. Pellentesque blandit mauris volutpat ante elementum dignissim. In dolor est, eleifend ac eros in, volutpat consequat massa. Pellentesque mollis nisi a fringilla placerat. Etiam odio metus, commodo nec placerat non, maximus a erat. Donec at sollicitudin sapien. Curabitur quam enim, tincidunt in est sed, aliquam consequat ligula. Phasellus iaculis leo ut nisi mollis suscipit. Suspendisse potenti. Integer ultricies metus id mi accumsan, ac pharetra mauris varius.</p>
+        </div>
+      </div>
+      <div class="slide contact" data-anchor="slide5">
+        <form>
+  <h1>Contáctenos</h1>
+  <input placeholder="Nombre" type="text"  value="" required>
+  <input placeholder="Email" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+  <span class="validation-text">Please enter a valid email address.</span>
+  <div class="flex">
+    <textarea placeholder="Mensaje" rows="1" required></textarea>
+  </div>
+  <button>Enviar</button>
+</form>
+      </div>
+    </div>
+    <div class="section">
+      <div class="slide" data-anchor="slide1">
+        <div class="contenido">
+          <h1>Medicine 2.0 instead of gods in white coats</h1>
+          <img src="images/dldsummer_03_960x400.jpg" alt="">
+          <p>The digital revolution is capturing more and more areas of life. DLDsummer 15 has shown that major changes are about to hit the health sector, too: the enlightened patient takes his health in his own hands by means of cellphone, wrist computer or online chats.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-color:#2a8ed1;"  data-anchor="slide2"> 
+        <div class="contenido">
+          <h1>Casos de éxito</h1>
+          <div class="exito">
+            <article>
+              <h1></h1>
+              <img src="images/chart.png" alt="">
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="slide" style="background-color:#55a4da;" data-anchor="slide3">
+        <dev class="contenido">
+           <h1>Metodología</h1>
+           <div class="metodologia">
+              <img src="images/metodologia.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+           </div>
+         </dev> 
+      </div>
+      <div class="slide" style="background-color:#80bbe4; " data-anchor="slide4">
+        <div class="contenido procesos">
+          <h1>Procesos</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+          <p>Nam ullamcorper, urna non luctus semper, massa sapien mollis ex, mollis hendrerit libero ex ut leo. In aliquam dolor mi, in porttitor lectus gravida vitae. Mauris mattis, ex nec vulputate vehicula, quam justo dignissim orci, luctus aliquam augue neque quis augue. Ut laoreet pretium purus, quis varius nulla egestas vel. Pellentesque blandit mauris volutpat ante elementum dignissim. In dolor est, eleifend ac eros in, volutpat consequat massa. Pellentesque mollis nisi a fringilla placerat. Etiam odio metus, commodo nec placerat non, maximus a erat. Donec at sollicitudin sapien. Curabitur quam enim, tincidunt in est sed, aliquam consequat ligula. Phasellus iaculis leo ut nisi mollis suscipit. Suspendisse potenti. Integer ultricies metus id mi accumsan, ac pharetra mauris varius.</p>
+        </div>
+      </div>
+      <div class="slide contact" data-anchor="slide5">
+        <form>
+  <h1>Contáctenos</h1>
+  <input placeholder="Nombre" type="text"  value="" required>
+  <input placeholder="Email" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+  <span class="validation-text">Please enter a valid email address.</span>
+  <div class="flex">
+    <textarea placeholder="Mensaje" rows="1" required></textarea>
+  </div>
+  <button>Enviar</button>
+</form>
+      </div>
+    </div>
+    <div class="section">
+      <div class="slide" data-anchor="slide1">
+         <div class="contenido">
+          <h1>Allianz, Borealis, Infinity and MEAG acquire Tank & Rast</h1>
+          <img src="images/Raststaette_Peppenhoven_Ost_960x400.jpg" alt="">
+          <p>500 million visitors each year, 390 service areas, approximately 350 petrol stations and some 50 hotels on Germany’s highway network: Tank & Rast is Germany’s largest owner of motorway service areas.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-color:#2aab63;" data-anchor="slide2"> 
+        <div class="contenido">
+          <h1>Casos de éxito</h1>
+          <div class="exito">
+            <article>
+              <h1></h1>
+              <img src="images/chart.png" alt="">
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="slide" style="background-color:#55bc82;" data-anchor="slide3">
+        <dev class="contenido">
+           <h1>Metodología</h1>
+           <div class="metodologia">
+              <img src="images/metodologia.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+           </div>
+         </dev> 
+      </div>
+      <div class="slide" style="background-color:#80cda2; contact" data-anchor="slide4">
+        <div class="contenido procesos">
+          <h1>Procesos</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eleifend nibh. Vivamus placerat blandit justo, vel elementum velit. In at accumsan nulla, id aliquet arcu. Maecenas fermentum ante pellentesque tellus tincidunt egestas. Sed rhoncus erat eu tellus viverra, quis luctus odio iaculis. Praesent fermentum massa sit amet nisi euismod ullamcorper. Etiam placerat mollis justo a scelerisque. Curabitur accumsan, purus sit amet tempus viverra, enim enim pellentesque tortor, fermentum posuere neque eros ac risus.</p>
+          <p>Nam ullamcorper, urna non luctus semper, massa sapien mollis ex, mollis hendrerit libero ex ut leo. In aliquam dolor mi, in porttitor lectus gravida vitae. Mauris mattis, ex nec vulputate vehicula, quam justo dignissim orci, luctus aliquam augue neque quis augue. Ut laoreet pretium purus, quis varius nulla egestas vel. Pellentesque blandit mauris volutpat ante elementum dignissim. In dolor est, eleifend ac eros in, volutpat consequat massa. Pellentesque mollis nisi a fringilla placerat. Etiam odio metus, commodo nec placerat non, maximus a erat. Donec at sollicitudin sapien. Curabitur quam enim, tincidunt in est sed, aliquam consequat ligula. Phasellus iaculis leo ut nisi mollis suscipit. Suspendisse potenti. Integer ultricies metus id mi accumsan, ac pharetra mauris varius.</p>
+        </div>
+      </div>
+      <div class="slide contact" data-anchor="slide5">
+        <form>
+          <h1>Contáctenos</h1>
+          <input placeholder="Nombre" type="text"  value="" required>
+          <input placeholder="Email" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+          <span class="validation-text">Please enter a valid email address.</span>
+          <div class="flex">
+            <textarea placeholder="Mensaje" rows="1" required></textarea>
+          </div>
+          <button>Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="section">
+      <div class="slide" data-anchor="slide1">
+      <div class="contenido">
+        <div class="contenido">
+          <h1>Which kind of traveler are you?</h1>
+          <img src="images/reisequiz-stage.jpg" alt="">
+          <p>How do you like to travel? Low budget or luxury? Do you prefer riding on a speedboat or having a nice dinner? A study by Allianz Global Assistance has identified four types of travelers. Find out which group you belong to.</p>
+        </div>
+      </div>
+        
+      </div>
+       
+    </div>
+    <div class="section contact">
+      <div class="slide" data-anchor="slide1">
+      <form>
+        <h1>Contáctenos</h1>
+        <input placeholder="Nombre" type="text"  value="" required>
+        <input placeholder="Email" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+        <span class="validation-text">Please enter a valid email address.</span>
+        <div class="flex">
+          <textarea placeholder="Mensaje" rows="1" required></textarea>
+        </div>
+        <button>Enviar</button>
+      </form>
+      </div>
+       
+    </div>
+</div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+     // Nombreunction(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+     //   (A[].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+     //   r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+     // Ubicaciónow,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+     //   ga('cnsaje', 'UA-XXXXX-X');
+     //   ga('Enviar', 'pageview');
+
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script src="/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script src="/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+    <script src="/bower_components/snap.svg/dist/snap.svg-min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+         <script src="scripts/classie.js"></script>
+        <!-- endbuild -->
+
+          <script type="text/javascript">
+    $(document).ready(function() {
+
+      $('.sound-controls').on('click', 'li', function(){
+        $('this').find('video').get(0).muted = true;
+        alert('hola');
+      })
+
+
+      $('#fullpage').fullpage({
+        'verticalCentered': false,
+        'css3': true,
+        'sectionsColor': ['#003781', '#003781','#009ca6', '#a50034',   '#64a70b', '#0077c8', '#009a44', '#f2a900', '#e35205'],
+        'navigation': true,
+        'navigationPosition': 'right',
+        // 'scrollOverflow': true,
+        anchors:['inicio', 'video', 'servicio', 'servicio2', 'servicio3', 'servicio4', 'servicio5',  'clientes', 'contacto'],
+        onLeave: function(index, newIndex, direction){
+          // blink();
+           var leavingSection = $(this);
+
+           $.fn.fullpage.silentMoveTo(index, 0);
+           // $.fn.fullpage.moveSlideLeft();
+           console.log(newIndex);
+
+           $('video').get(0).pause();
+
+            //after leaving section 2
+            // if(index == 2 && direction =='down'){
+            //     alert("Going to section 3!");
+            // }
+
+            // else if(index == 2 && direction == 'up'){
+            //     alert("Going to section 1!");
+            // }
+        },
+        // onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
+        //     var leavingSlide = $(this);
+        //     video = leavingSlide.find('video').get(0);
+
+        //     //leaving the first slide of the 2nd Section to the right
+        //     if( index == 3 && slideIndex == 0 ){
+        //        $('#transporte-video').get(0).pause();
+        //     }
+        //      if( index == 3 && nextSlideIndex == 0 ){
+        //        $('#transporte-video').get(0).play();
+        //     }
+        //     if( index == 4 && slideIndex == 0 ){
+        //        $('#ventas-video').get(0).pause();
+        //     }
+        //      if( index == 4 && nextSlideIndex == 0 ){
+        //        $('#ventas-video').get(0).play();
+        //     }
+        //     // else if(nextSlideIndex == 0 ){
+        //     //    $(this).find('video').get(0).play();
+        //     //    console.log( $(this).find('video'));
+        //     // }
+        // }
+      });
+    });
+
+  //     var s = new Snap('.pajaro');
+      
+
+  //   Snap.load('images/logo.svg', function (pajaro) {
+  //     cabeza = pajaro.selectAll('.cabeza');
+  //     ala = pajaro.selectAll('.ala');
+  //     chispas = pajaro.selectAll('.chispas');
+    
+  //   s.append(pajaro);    //Now we add the SVG element to the page
+  //   $('span').hover( hoverover, hoverout );
+  // });
+  //   var j = Snap.select('.pajaro');
+
+  //   var hoverover = function() { 
+  //     cabeza.animate({ transform: 't200,-50' }, 100,  mina.elastic);
+  //     ala.animate({transform:'t100,50r2t-100,0'},100, mina.elastic);
+  //     // chispas.animate({ transform: 't0, 0' }, 100,  mina.elastic);
+  //   };
+  //   var hoverout = function() { 
+  //     cabeza.animate({ transform: 't0t,0' }, 500, mina.elastic );
+  //     ala.animate({transform:'r0, 0'},500, mina.elastic); 
+  //     // chispas.animate({ transform: 't50t,100' }, 100, mina.elastic );
+  //   };
+
+  //     function blink(){
+  //      cabeza.animate({ transform: 't200,-50' }, 100, mina.elastic, function(){
+  //       cabeza.animate({ transform: 't0t,0' }, 500, mina.elastic );
+  //     });
+  //       ala.animate({transform:'t100,50r2t-100,0'}, 100, mina.elastic, function(){
+  //       ala.animate({transform:'r0, 0'}, 500, mina.elastic );
+  //     });
+  //   };
+     
+    // Recall blink method once every 3 seconds
+     
+    // setInterval(blink, 3000);
+
+
+
+  </script>
+
+  <script>
+      (function() {
+
+        function SVGMenu( el, options ) {
+          this.el = el;
+          this.init();
+        }
+
+        SVGMenu.prototype.init = function() {
+          this.trigger = this.el.querySelector( 'button.menu__handle' );
+          this.shapeEl = this.el.querySelector( 'div.morph-shape' );
+
+          var s = Snap( this.shapeEl.querySelector( 'svg' ) );
+          this.pathEl = s.select( 'path' );
+          this.paths = {
+            reset : this.pathEl.attr( 'd' ),
+            open : this.shapeEl.getAttribute( 'data-morph-open' ),
+            close : this.shapeEl.getAttribute( 'data-morph-close' )
+          };
+
+          this.isOpen = false;
+
+          this.initEvents();
+        };
+
+        SVGMenu.prototype.initEvents = function() {
+          this.trigger.addEventListener( 'click', this.toggle.bind(this) );
+        };
+
+        SVGMenu.prototype.toggle = function() {
+          var self = this;
+
+          if( this.isOpen ) {
+            classie.remove( self.el, 'menu--anim' );
+            setTimeout( function() { classie.remove( self.el, 'menu--open' ); }, 250 );
+            $('.fp-controlArrow.fp-prev').fadeIn();
+
+          }
+          else {
+            classie.add( self.el, 'menu--anim' );
+            setTimeout( function() { classie.add( self.el, 'menu--open' );  }, 250 );
+             $('.fp-controlArrow.fp-prev').fadeOut();
+          }
+          this.pathEl.stop().animate( { 'path' : this.isOpen ? this.paths.close : this.paths.open }, 350, mina.easeout, function() {
+            self.pathEl.stop().animate( { 'path' : self.paths.reset }, 800, mina.elastic );
+          } );
+          
+          this.isOpen = !this.isOpen;
+        };
+
+        new SVGMenu( document.getElementById( 'menu' ) );
+
+      })();
+    </script>
+
+</body>
+</html>
